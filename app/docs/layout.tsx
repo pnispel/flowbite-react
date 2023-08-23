@@ -154,7 +154,7 @@ const DocsSidebar: FC<DocsLayoutState> = ({ isCollapsed, setCollapsed }) => {
     <>
       <div
         className={twMerge(
-          'fixed inset-0 z-50 h-full w-64 flex-none lg:static lg:block lg:h-auto lg:overflow-y-visible lg:pt-6',
+          'fixed inset-0 z-50 h-full w-64 flex-none border-r border-gray-200 dark:border-gray-600 lg:static lg:block lg:h-auto lg:overflow-y-visible lg:pt-6',
           isCollapsed && 'hidden',
         )}
       >
@@ -162,9 +162,9 @@ const DocsSidebar: FC<DocsLayoutState> = ({ isCollapsed, setCollapsed }) => {
           collapsed={false}
           theme={{
             root: {
-              base: 'h-full border-r border-gray-200 dark:border-gray-600',
+              base: 'h-full',
               inner:
-                'overflow-y-auto px-4 pt-20 lg:pt-0 h-full bg-white scrolling-touch max-w-2xs lg:h-[calc(100vh-8rem)] lg:block dark:bg-gray-900 dark:hover:bg-transparent lg:mr-0 lg:sticky top-20 font-normal text-base lg:text-sm',
+                'overflow-y-auto px-4 pt-20 lg:pt-0 h-full border-r border-gray-200 dark:border-gray-600 bg-white scrolling-touch max-w-2xs lg:h-[calc(100vh-8rem)] lg:block dark:bg-gray-900 dark:hover:bg-transparent lg:mr-0 lg:sticky top-20 font-normal text-base lg:text-sm',
             },
           }}
         >
